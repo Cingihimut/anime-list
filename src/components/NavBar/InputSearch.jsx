@@ -9,8 +9,10 @@ const InputSearch = () => {
   const router = useRouter();
 
   const handleSearch = () => {
-    const keyword = searchRef.current.value;
-    router.push(`/search/${keyword}`);
+    const keyword = searchRef.current.value.trim();
+    if(keyword) {
+      router.push(`/search/${keyword}`);
+    }
   };
 
   const handleKeyDown = (event) => {
