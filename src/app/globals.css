@@ -2,26 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+img{
+    transition: .3s ease all;
+}
+
+img:hover{
+    scale: 102%;
+}
+
+.loading {
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    padding:1px;
+    background:conic-gradient(#0000 10%,#ffc639) content-box;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+      radial-gradient(farthest-side,#0000 calc(100% - 18px),#000 calc(100% - 16px));
+    -webkit-mask-composite: destination-in;
+    mask-composite: intersect;
+    animation:s4 0.5s infinite steps(10);
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  @keyframes s4 {to{transform: rotate(1turn)}}
