@@ -5,6 +5,7 @@ import HeaderMenu from "@/components/Utilities/HeaderMenu";
 import Pagination from "@/components/Utilities/Pagination";
 import { useEffect, useState } from "react";
 import { getAnimeResponse } from "@/libs/apiLibs";
+import Particles from "@/components/Design";
 
 const Page = () => {
 
@@ -22,6 +23,7 @@ const Page = () => {
 
     return(
         <>
+        <Particles/>
         <HeaderMenu title={`Anime Terpopuler #${page}`}/>
         <AnimeList api={topAnime}/>
         <Pagination page={page} lastPage={topAnime.pagination?.last_visible_page} setPage={setPage}/>
