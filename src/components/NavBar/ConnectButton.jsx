@@ -1,6 +1,6 @@
 "use client";
 
-const Login = () => {
+const ConnectButton = () => {
 
   const connectToMetamask = async () => {
     if (window.ethereum) {
@@ -465,4 +465,4 @@ const Login = () => {
     </>
   );
 };
-export default Login;
+export default ConnectButton;

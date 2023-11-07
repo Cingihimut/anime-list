@@ -4,7 +4,7 @@ import AnimeList from "@/components/AnimeList";
 import HeaderMenu from "@/components/Utilities/HeaderMenu";
 import Pagination from "@/components/Utilities/Pagination";
 import { useEffect, useState } from "react";
-import { getAnimeResponse } from "@/libs/apiLibs";
+import { getAnimeResponse } from "@/libs/api-Libs";
 import Particles from "@/components/Design";
 
 const Page = () => {
