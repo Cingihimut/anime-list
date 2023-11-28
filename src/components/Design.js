@@ -21,7 +21,6 @@ const ParticlesComponents = () => {
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
-                fpsLimit: 50,
                 interactivity: {
                     events: {
                         onHover: {
@@ -31,12 +30,8 @@ const ParticlesComponents = () => {
                         resize: true,
                     },
                     modes: {
-                        push: {
-                            quantity: 4,
-                        },
                         repulse: {
                             distance: 100,
-                            duration: 0.4,
                         },
                     },
                 },
@@ -46,7 +41,7 @@ const ParticlesComponents = () => {
                     },
                     links: {
                         color: "#ffffff",
-                        distance: 120,
+                        distance: 100,
                         enable: true,
                         opacity: 0.5,
                         width: 1,

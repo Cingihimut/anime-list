@@ -1,6 +1,6 @@
-"use client";
+"use client"
 
-const ConnectButton = () => {
+const ConnectButton = async() => {
 
   const connectToMetamask = async () => {
     if (window.ethereum) {
