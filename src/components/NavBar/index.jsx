@@ -1,6 +1,6 @@
 import Link from "next/link";
 import InputSearch from "./InputSearch";
-import ConnectButton from "./ConnectButton";
+// import ConnectButton from "./ConnectButton";
 import UserActionButton from "./UserActionButton";
 
 const NavBar = () => {
@@ -13,7 +13,7 @@ const NavBar = () => {
         </Link>
         <InputSearch />
             <UserActionButton/>
-            <ConnectButton/>
+            {/* <ConnectButton/> */}
       </div>
     </header>
   );

@@ -1,15 +1,21 @@
 import { getAnimeResponse } from "@/libs/api-Libs";
 import VideoPlayer from "@/components/Utilities/videoPlayer";
 import Image from "next/image";
+import CollectionButton from "@/components/AnimeList/ColletctionButton";
+import { authUserSession } from "@/libs/auth-libs";
 
 const Page = async ({ params: { id } }) => {
   const anime = await getAnimeResponse(`anime/${id}`);
+  const user = await authUserSession()
+  console.log(user)
+
   return (
     <>
       <div className="pt-4 px-4">
         <h2 className="text-2xl text-color-primary">
           {anime.data.title} - {anime.data.year}
         </h2>
+        <CollectionButton anime_mal_id={id} user_email={user?.email} />
       </div>
       <div className="pt-4 px-4 flex gap-4 text-color-primary overflow-x-auto">
         <div className="w-36 flex flex-col justify-center items-center rounded border border-color-pimary p-2">
@@ -40,7 +46,7 @@ const Page = async ({ params: { id } }) => {
         <p className="text-justify text-xl">{anime.data.synopsis}</p>
       </div>
       <div>
-        <VideoPlayer youtubeId={anime.data.trailer.youtube_id}/>
+        <VideoPlayer youtubeId={anime.data.trailer.youtube_id} />
       </div>
 
     </>
