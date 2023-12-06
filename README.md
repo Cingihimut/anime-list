@@ -17,21 +17,21 @@ Dengan mengintegrasikan API Jikan, platform ini menyediakan informasi lengkap me
 - Salin file .env.example ke .env dan isi konfigurasi yang diperlukan.
 
 ```
-###🌐 Menjalankan Aplikasi
+### 🌐 Menjalankan Aplikasi
 ```bash
 - npm run dev
 - Dapat diakeses pada localhost:3000
 ```
 
-# Teknologi
-##FrontEnd
+# 🖥Teknologi
+## 🚀 FrontEnd 
 - Nextjs 14
 - Tailwind css
 - poshpor icon
 - Tsparticles
 
-##ORM
+## 🔺 ORM 
 - Prisma
 
-##DB
+## 🗄 DB 
 - MySql
