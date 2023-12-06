@@ -9,7 +9,8 @@ Dengan mengintegrasikan API Jikan, platform ini menyediakan informasi lengkap me
 
 ```bash
 - git clone https://github.com/username/nonton-anime-website.git
-- cd nonton-anime-website
+- cd anime-list
+- cd src
 - npm install
 ```
 ### 2. Konfigurasi
