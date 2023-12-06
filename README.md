@@ -8,7 +8,7 @@ Dengan mengintegrasikan API Jikan, platform ini menyediakan informasi lengkap me
 ### 1. Clone Repositori
 
 ```bash
-- git clone https://github.com/username/nonton-anime-website.git
+- git clone https://github.com/cingihimut/anime-list.git
 - cd anime-list
 - cd src
 - npm install
