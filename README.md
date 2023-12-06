@@ -10,7 +10,6 @@ Dengan mengintegrasikan API Jikan, platform ini menyediakan informasi lengkap me
 ```bash
 - git clone https://github.com/cingihimut/anime-list.git
 - cd anime-list
-- cd src
 - npm install
 ```
 ### 2. Konfigurasi
