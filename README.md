@@ -14,7 +14,7 @@ Dengan mengintegrasikan API Jikan, platform ini menyediakan informasi lengkap me
 ```
 ### 2. Konfigurasi
 ```bash
-- Salin file .env.example ke .env dan isi konfigurasi yang diperlukan.
+- Gunakan konfigurasi pada file .env sesuai dengan yang anda butuhkan dan pakai punya anda sendiri
 
 ```
 ### 🌐 Menjalankan Aplikasi
