@@ -23,7 +23,7 @@ Dengan mengintegrasikan API Jikan, platform ini menyediakan informasi lengkap me
 - Dapat diakeses pada localhost:3000
 ```
 
-# 🖥Teknologi
+# 🖥 Teknologi
 ## 🚀 FrontEnd 
 - Nextjs 14
 - Tailwind css
