@@ -12,8 +12,7 @@ const NavBar = () => {
           Anime List
         </Link>
         <InputSearch />
-            <UserActionButton/>
-            {/* <ConnectButton/> */}
+        <UserActionButton/>
       </div>
     </header>
   );
