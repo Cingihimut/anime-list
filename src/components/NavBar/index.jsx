@@ -11,7 +11,7 @@ const NavBar = () => {
         <Link href="/" className="font-bold text-2xl text-color-primary">
           Anime List
         </Link>
-        <InputSearch />
+        <InputSearch/>
         <UserActionButton/>
       </div>
     </header>

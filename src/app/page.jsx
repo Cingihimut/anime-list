@@ -34,9 +34,9 @@ const Page = async () => {
       </div>
 
       </div>
-    <div className="">
-      <Particles/>
-    </div>
+      <div className="">
+        <Particles/>
+      </div>
     </>
   );
 };
